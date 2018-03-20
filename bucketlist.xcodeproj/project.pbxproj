@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E04E94EB20587F7D0063AC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E94EA20587F7D0063AC57 /* AppDelegate.swift */; };
-		E04E94ED20587F7D0063AC57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E94EC20587F7D0063AC57 /* ViewController.swift */; };
+		E04E94ED20587F7D0063AC57 /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E94EC20587F7D0063AC57 /* BucketListViewController.swift */; };
 		E04E94F020587F7D0063AC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04E94EE20587F7D0063AC57 /* Main.storyboard */; };
 		E04E94F220587F7D0063AC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04E94F120587F7D0063AC57 /* Assets.xcassets */; };
 		E04E94F520587F7D0063AC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04E94F320587F7D0063AC57 /* LaunchScreen.storyboard */; };
 		E04E950020587F7D0063AC57 /* bucketlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E94FF20587F7D0063AC57 /* bucketlistTests.swift */; };
 		E04E950B20587F7D0063AC57 /* bucketlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E950A20587F7D0063AC57 /* bucketlistUITests.swift */; };
+		E0CAED352058ADD300403EAC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAED342058ADD300403EAC /* AddViewController.swift */; };
+		E0CAED392058D1AD00403EAC /* AddItemTVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAED382058D1AD00403EAC /* AddItemTVCDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E04E94E720587F7D0063AC57 /* bucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04E94EA20587F7D0063AC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E04E94EC20587F7D0063AC57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E04E94EC20587F7D0063AC57 /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
 		E04E94EF20587F7D0063AC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E04E94F120587F7D0063AC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E04E94F420587F7D0063AC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		E04E950620587F7D0063AC57 /* bucketlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bucketlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04E950A20587F7D0063AC57 /* bucketlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bucketlistUITests.swift; sourceTree = "<group>"; };
 		E04E950C20587F7D0063AC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0CAED342058ADD300403EAC /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E0CAED382058D1AD00403EAC /* AddItemTVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTVCDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		E04E94E920587F7D0063AC57 /* bucketlist */ = {
 			isa = PBXGroup;
 			children = (
+				E0CAED382058D1AD00403EAC /* AddItemTVCDelegate.swift */,
 				E04E94EA20587F7D0063AC57 /* AppDelegate.swift */,
-				E04E94EC20587F7D0063AC57 /* ViewController.swift */,
+				E04E94EC20587F7D0063AC57 /* BucketListViewController.swift */,
+				E0CAED342058ADD300403EAC /* AddViewController.swift */,
 				E04E94EE20587F7D0063AC57 /* Main.storyboard */,
 				E04E94F120587F7D0063AC57 /* Assets.xcassets */,
 				E04E94F320587F7D0063AC57 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04E94ED20587F7D0063AC57 /* ViewController.swift in Sources */,
+				E04E94ED20587F7D0063AC57 /* BucketListViewController.swift in Sources */,
 				E04E94EB20587F7D0063AC57 /* AppDelegate.swift in Sources */,
+				E0CAED392058D1AD00403EAC /* AddItemTVCDelegate.swift in Sources */,
+				E0CAED352058ADD300403EAC /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +438,7 @@
 				DEVELOPMENT_TEAM = 4J23PF8AH4;
 				INFOPLIST_FILE = bucketlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.natalienuno.bucketlist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natalienuno.cold-call-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +453,7 @@
 				DEVELOPMENT_TEAM = 4J23PF8AH4;
 				INFOPLIST_FILE = bucketlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.natalienuno.bucketlist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natalienuno.cold-call-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

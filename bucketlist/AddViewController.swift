@@ -8,11 +8,31 @@
 
 import UIKit
 
-class AddTableViewController: UITableViewController {
-    weak var delegate: CancleButtonDelegate?
+class AddViewController: UITableViewController {
+    var item: String?
+    var indexPath: NSIndexPath?
     
-    @IBAction func cancelBarButtonPressed(_ sender: Any) {
+    weak var delegate: AddItemTVCDelegate?
+    
+    @IBOutlet weak var itemTextField: UITextField!
+    
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        if let text = itemTextField.text {
+            delegate?.itemSaved(by: self, with: text, at: indexPath)
+        }
+    }
+    
+    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         delegate?.cancelButtonPressed(by: self)
-        print("cancel")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        itemTextField.text = item
+        //        print("hello bucket")
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 }
