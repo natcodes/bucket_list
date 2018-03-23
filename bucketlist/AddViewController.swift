@@ -25,14 +25,14 @@ class AddViewController: UITableViewController {
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         delegate?.cancelButtonPressed(by: self)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        itemTextField.text = item
-        //        print("hello bucket")
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        itemTextField.text = item
+//        //        print("hello bucket")
+//        // Do any additional setup after loading the view, typically from a nib.
+//    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//    }
 }
