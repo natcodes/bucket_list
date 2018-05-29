@@ -19,9 +19,14 @@ class BucketListViewController: UITableViewController, AddItemTVCDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchAllItems()
-        //what happens when the view loads.
+    
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        fetchAllItems()
+        tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -75,13 +80,16 @@ class BucketListViewController: UITableViewController, AddItemTVCDelegate {
         }
     }
     
-    // ================================ CIRCLE TO EDIT SELECTION DYNAMIC CELLS ==========================
+    // =============== CIRCLE TO EDIT SELECTION DYNAMIC CELLS =======
     
    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        //responds to accessory circle being selected. tell it to do something...
+        //responds to accessory circle being selected. Tell it to do something.
         performSegue(withIdentifier: "AddEditItemSegue", sender: indexPath)
     }
-    //  ============ DELETE entry =======
+    
+    
+    
+    //  ============ DELETE entry with swipe left =======
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let item = items[indexPath.row] //create the managed object var to pass to the delete function.
         print(item)
@@ -95,7 +103,7 @@ class BucketListViewController: UITableViewController, AddItemTVCDelegate {
         tableView.reloadData() //reload it without the cell and data.
     }
     
-    // ====================== HANDSHAKE ============================================
+    // ====================== HANDSHAKE ================
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // indicates...
